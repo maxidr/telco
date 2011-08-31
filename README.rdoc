@@ -1,19 +1,19 @@
 = test-10pines
 
-Una empresa de telecomunicaciones requiere generar facturas a sus clientes por el abono del uso de su servicio.
-Teniendo en cuenta que:
-1) La facturación se realiza de manera mensual
-2) La facturación está compuesta por:
-  a. Un abono mensual básico de $10
-  b. Consumo por llamadas Locales
-  c. Consumo por llamadas Nacionales e Internacionales
-3) Las llamadas locales tienen distintos valores según la franja horaria en la que se realizan y el día. Para los días hábiles, de 8 a 20 hrs. el costo es de 0,20 centavos el minuto, mientras en el resto de las horas es de 0,10 centavos el minuto. Los sábados y domingos cuesta 0,10 centavos el minuto
-4) Las llamadas Internacionales tienen un costo distinto según el país al que se llame. Para los paises de Sudamerica 0,50 centavos el minuto, para Norteamerica y Europa 0,70 centavos el minuto y para el resto del mundo $1.5  el minuto.
-5) Las llamadas Nacionales tienen un costo de 0,30 centavos el minuto
+  Una empresa de telecomunicaciones requiere generar facturas a sus clientes por el abono del uso de su servicio.
+  Teniendo en cuenta que:
+  1) La facturación se realiza de manera mensual
+  2) La facturación está compuesta por:
+    a. Un abono mensual básico de $10
+    b. Consumo por llamadas Locales
+    c. Consumo por llamadas Nacionales e Internacionales
+  3) Las llamadas locales tienen distintos valores según la franja horaria en la que se realizan y el día. Para los días hábiles, de 8 a 20 hrs. el costo es de 0,20 centavos el minuto, mientras en el resto de las horas es de 0,10 centavos el minuto. Los sábados y domingos cuesta 0,10 centavos el minuto
+  4) Las llamadas Internacionales tienen un costo distinto según el país al que se llame. Para los paises de Sudamerica 0,50 centavos el minuto, para Norteamerica y Europa 0,70 centavos el minuto y para el resto del mundo $1.5  el minuto.
+  5) Las llamadas Nacionales tienen un costo de 0,30 centavos el minuto
 
-Consideraciones adicionales:
-1) No es necesario realizar una interfaz de usuario ni una salida por pantalla. Alcanza con los tests necesarios para verificar que la funcionalidad esta correctamente implementada
-2) No es necesario realizar persistencia de los datos (o sea, conexión a base de datos, archivos, etc.). Alcanza con simular los datos creándolos en memoria
+  Consideraciones adicionales:
+  1) No es necesario realizar una interfaz de usuario ni una salida por pantalla. Alcanza con los tests necesarios para verificar que la funcionalidad esta correctamente implementada
+  2) No es necesario realizar persistencia de los datos (o sea, conexión a base de datos, archivos, etc.). Alcanza con simular los datos creándolos en memoria
 
 == Contributing to test-10pines
 

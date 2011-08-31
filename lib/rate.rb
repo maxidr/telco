@@ -10,6 +10,8 @@ module Rate
     Zone::ELSEWHERE     => 1.5
   }
 
+  BASE_PAYMENT = 10.0
+
   #  Perform the cost calculation of a call using the COST_BY_ZONE hash.
   #  If you need to realize a particular calculation create a class (#{zone_name}Rate.rb)
   #  and implement the method calculate(call)
