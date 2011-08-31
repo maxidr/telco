@@ -1,7 +1,23 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require "call"
 
-describe "Test10pines" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+describe "Account" do
+
+  it "should calculate the total monthly bill" do
+    fail "unimplemented"
   end
+
+  it "should determine the local call amount" do
+    fail "unimplemented"
+  end
+
+  it "should determine the international call amount" do
+    fail "unimplemented"
+  end
+
+  it "should determine the national call amount" do
+    fail "unimplemented"
+  end
+
 end
+
