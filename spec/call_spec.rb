@@ -9,10 +9,10 @@ describe Call do
   context "build with star time #{start_time}, end time #{end_time} and local zone" do
     subject { Call.new(:start => start_time, :end => end_time, :zone => Zone::LOCAL) }
     it { should_not be_nil }
-    its(:start) { should == start_time }
-    its(:end) { should == end_time }
-    its(:duration) { should == 60 }
-    its(:zone) { should == Zone::LOCAL }
+    its(:start) { should equal start_time }
+    its(:end) { should equal end_time }
+    its(:duration) { should equal 60 }
+    its(:zone) { should equal Zone::LOCAL }
   end
 
   context "build without zone" do
