@@ -7,10 +7,11 @@ class Call
       instance_variable_set("@#{k}", v) unless v.nil?
     end
     validate
+    @zone = Zone::LOCAL if @zone.nil?
   end
 
   def duration
-    (@end - @start) / 60
+    ((@end - @start) / 60).round
   end
 
   private
@@ -19,6 +20,7 @@ class Call
     raise ArgumentError, 'start time and end time is required' if @start.nil? or @end.nil?
     raise ArgumentError, 'start time is not a Time object' unless @start.is_a? Time
     raise ArgumentError, 'end time is not a Time object' unless @end.is_a? Time
+    raise ArgumentError, 'start time cannot be later than end time' if @start > @end
   end
 end
 
