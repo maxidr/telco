@@ -41,7 +41,7 @@ describe Account do
     describe "#register_call" do
       before do
         @account = Account.new
-        @account.register_call Call.new(:start => Time.now - 120, :end => Time.now)
+        @account.register_call Call.new(:start => hour(20) - 120, :end => hour(20))
       end
       subject { @account }
       its(:calls) { should have(1).items }
